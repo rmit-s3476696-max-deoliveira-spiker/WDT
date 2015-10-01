@@ -8,7 +8,6 @@ using System.Web.Routing;
 
 namespace WebApplication1
 {
-    //vnsdjkvdskjbvjsdvbjhsb
     public class MvcApplication : System.Web.HttpApplication
     {
         protected void Application_Start()
