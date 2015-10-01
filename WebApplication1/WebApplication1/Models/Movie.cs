@@ -4,6 +4,8 @@ namespace WebApplication1.Models
 {
     public class Movie
     {
+        // Test new commit
+        // this is a test.
         public int Movie_ID { get; set; }
         public string Movie_Title { get; set; }
         public string Dsecription { get; set; }
