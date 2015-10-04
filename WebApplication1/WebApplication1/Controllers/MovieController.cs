@@ -10,6 +10,7 @@ using WebApplication1.Models;
 
 namespace WebApplication1.Controllers
 {
+    //test
     public class MovieController : Controller
     {
         private MovieDBContext db = new MovieDBContext();
