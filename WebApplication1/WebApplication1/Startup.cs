@@ -8,6 +8,7 @@ namespace WebApplication1
     {
         // this ...
         // this should be work
+        // see this?
         public void Configuration(IAppBuilder app)
         {
             ConfigureAuth(app);
