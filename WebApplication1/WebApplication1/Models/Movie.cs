@@ -1,10 +1,11 @@
-﻿using System.Data.Entity;
+﻿using System.ComponentModel.DataAnnotations;
+using System.Data.Entity;
 
 namespace WebApplication1.Models
 {
     public class Movie
     {
-        public int Movie_ID { get; set; }
+        [Key]public int Movie_ID { get; set; }
         public string Movie_Title { get; set; }
         public string Short_Description { get; set; }
         public string Long_Description { get; set; }
