@@ -7,6 +7,7 @@ namespace WebApplication1
     public partial class Startup
     {
         // this ...
+        // this should be work
         public void Configuration(IAppBuilder app)
         {
             ConfigureAuth(app);
