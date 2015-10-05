@@ -16,6 +16,7 @@
 </p>
 <div class="mvMain">
     <div id="mvTitle">- NOW SHOWING -</div><br>
+<<<<<<< HEAD
 @foreach(var row in db.Query(query))
 {
     <span id="mvImage"><img src="+@row.ImageUrl+" alt="+@row.Title+" height="300" width="200" /><br><span id="mvLink">@row.Title</span></span>
@@ -24,6 +25,19 @@
 
            <!--  <table class="table">
                 <tr>
+=======
+    <span id="mvImage"><img src="" alt="Movie" height="300" width="200" /><br><span id="mvLink"></span></span>
+</div>
+            <div>
+                <ul>
+                    <li>Movie1</li>
+                    <li>Movie2</li>
+                    <li>Movie3</li>
+                </ul>
+            </div>
+            <table class="table">
+                 <tr>
+>>>>>>> origin/master
                     <th>
                         @Html.DisplayNameFor(model => model.Movie_Title)
                     </th>

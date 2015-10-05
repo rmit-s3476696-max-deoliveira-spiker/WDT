@@ -18,6 +18,7 @@ namespace WebApplication1.Controllers
         // GET: /Movie/
        /* public ActionResult Index()
         {
+<<<<<<< HEAD
             try
             {
                 if ()
@@ -30,6 +31,12 @@ namespace WebApplication1.Controllers
                 
             }
         }*/
+=======
+            var movies = from m in db.Movies
+                         select m; 
+            return View(movies);
+        }
+>>>>>>> origin/master
 
         // GET: /Movie/Details/5
         public ActionResult Details(int? id)
