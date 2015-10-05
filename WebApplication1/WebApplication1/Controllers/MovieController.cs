@@ -16,10 +16,20 @@ namespace WebApplication1.Controllers
         private MovieDBContext db = new MovieDBContext();
         //
         // GET: /Movie/
-        public ActionResult Index()
+       /* public ActionResult Index()
         {
-            return View(db.Movies.ToList());
-        }
+            try
+            {
+                if ()
+                {
+                return View(db.Movies.ToList());
+                }
+            }
+            catch (Data.Exception ex)
+            {
+                
+            }
+        }*/
 
         // GET: /Movie/Details/5
         public ActionResult Details(int? id)

@@ -1,0 +1,356 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebMatrix.Data.2.0.0.0.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:WebMatrix.Data.Fakes.ShimConnectionEventArgs">
+            <summary>Shim type of WebMatrix.Data.ConnectionEventArgs</summary>
+        </member>
+        <member name="M:WebMatrix.Data.Fakes.ShimConnectionEventArgs.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:WebMatrix.Data.Fakes.ShimConnectionEventArgs.#ctor(WebMatrix.Data.ConnectionEventArgs)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:WebMatrix.Data.Fakes.ShimConnectionEventArgs.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:WebMatrix.Data.Fakes.ShimConnectionEventArgs.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimConnectionEventArgs.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimConnectionEventArgs.ConnectionGet">
+            <summary>Sets the shim of ConnectionEventArgs.get_Connection()</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimConnectionEventArgs.ConnectionSetDbConnection">
+            <summary>Sets the shim of ConnectionEventArgs.set_Connection(DbConnection value)</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimConnectionEventArgs.ConstructorDbConnection">
+            <summary>Sets the shim of ConnectionEventArgs.ConnectionEventArgs(DbConnection connection)</summary>
+        </member>
+        <member name="T:WebMatrix.Data.Fakes.ShimConnectionEventArgs.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimConnectionEventArgs.AllInstances.ConnectionGet">
+            <summary>Sets the shim of ConnectionEventArgs.get_Connection()</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimConnectionEventArgs.AllInstances.ConnectionSetDbConnection">
+            <summary>Sets the shim of ConnectionEventArgs.set_Connection(DbConnection value)</summary>
+        </member>
+        <member name="T:WebMatrix.Data.Fakes.ShimDatabase">
+            <summary>Shim type of WebMatrix.Data.Database</summary>
+        </member>
+        <member name="M:WebMatrix.Data.Fakes.ShimDatabase.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:WebMatrix.Data.Fakes.ShimDatabase.#ctor(WebMatrix.Data.Database)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:WebMatrix.Data.Fakes.ShimDatabase.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:WebMatrix.Data.Fakes.ShimDatabase.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:WebMatrix.Data.Fakes.ShimDatabase.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDatabase.AddParametersDbCommandObjectArray">
+            <summary>Sets the shim of Database.AddParameters(DbCommand command, Object[] args)</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDatabase.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDatabase.Close">
+            <summary>Sets the shim of Database.Close()</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDatabase.ConnectionGet">
+            <summary>Sets the shim of Database.get_Connection()</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDatabase.ConnectionOpenedAddEventHandlerOfConnectionEventArgs">
+            <summary>Sets the shim of Database.add_ConnectionOpened(EventHandler`1&lt;ConnectionEventArgs&gt; value)</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDatabase.ConnectionOpenedRemoveEventHandlerOfConnectionEventArgs">
+            <summary>Sets the shim of Database.remove_ConnectionOpened(EventHandler`1&lt;ConnectionEventArgs&gt; value)</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDatabase.ConstructorFuncOfDbConnection">
+            <summary>Sets the shim of Database.Database(Func`1&lt;DbConnection&gt; connectionFactory)</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDatabase.Dispose">
+            <summary>Sets the shim of Database.Dispose()</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDatabase.DisposeBoolean">
+            <summary>Sets the shim of Database.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDatabase.EnsureConnectionOpen">
+            <summary>Sets the shim of Database.EnsureConnectionOpen()</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDatabase.ExecuteStringObjectArray">
+            <summary>Sets the shim of Database.Execute(String commandText, Object[] args)</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDatabase.GetColumnNamesDbDataRecord">
+            <summary>Sets the shim of Database.GetColumnNames(DbDataRecord record)</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDatabase.GetDefaultProviderName">
+            <summary>Sets the shim of Database.GetDefaultProviderName()</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDatabase.GetLastInsertId">
+            <summary>Sets the shim of Database.GetLastInsertId()</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDatabase.OnConnectionOpened">
+            <summary>Sets the shim of Database.OnConnectionOpened()</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDatabase.OpenConnectionStringInternalStringString">
+            <summary>Sets the shim of Database.OpenConnectionStringInternal(String providerName, String connectionString)</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDatabase.OpenConnectionStringString">
+            <summary>Sets the shim of Database.OpenConnectionString(String connectionString)</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDatabase.OpenConnectionStringStringString">
+            <summary>Sets the shim of Database.OpenConnectionString(String connectionString, String providerName)</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDatabase.OpenString">
+            <summary>Sets the shim of Database.Open(String name)</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDatabase.QueryInternalStringObjectArray">
+            <summary>Sets the shim of Database.QueryInternal(String commandText, Object[] parameters)</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDatabase.QuerySingleStringObjectArray">
+            <summary>Sets the shim of Database.QuerySingle(String commandText, Object[] args)</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDatabase.QueryStringObjectArray">
+            <summary>Sets the shim of Database.Query(String commandText, Object[] parameters)</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDatabase.QueryValueStringObjectArray">
+            <summary>Sets the shim of Database.QueryValue(String commandText, Object[] args)</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDatabase.StaticConstructor">
+            <summary>Sets the shim of Database.Database()</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDatabase._connectionOpenedAddEventHandlerOfConnectionEventArgs">
+            <summary>Sets the shim of Database.add__connectionOpened(EventHandler`1&lt;ConnectionEventArgs&gt; value)</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDatabase._connectionOpenedRemoveEventHandlerOfConnectionEventArgs">
+            <summary>Sets the shim of Database.remove__connectionOpened(EventHandler`1&lt;ConnectionEventArgs&gt; value)</summary>
+        </member>
+        <member name="T:WebMatrix.Data.Fakes.ShimDatabase.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDatabase.AllInstances.Close">
+            <summary>Sets the shim of Database.Close()</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDatabase.AllInstances.ConnectionGet">
+            <summary>Sets the shim of Database.get_Connection()</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDatabase.AllInstances.Dispose">
+            <summary>Sets the shim of Database.Dispose()</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDatabase.AllInstances.DisposeBoolean">
+            <summary>Sets the shim of Database.Dispose(Boolean disposing)</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDatabase.AllInstances.EnsureConnectionOpen">
+            <summary>Sets the shim of Database.EnsureConnectionOpen()</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDatabase.AllInstances.ExecuteStringObjectArray">
+            <summary>Sets the shim of Database.Execute(String commandText, Object[] args)</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDatabase.AllInstances.GetLastInsertId">
+            <summary>Sets the shim of Database.GetLastInsertId()</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDatabase.AllInstances.OnConnectionOpened">
+            <summary>Sets the shim of Database.OnConnectionOpened()</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDatabase.AllInstances.QueryInternalStringObjectArray">
+            <summary>Sets the shim of Database.QueryInternal(String commandText, Object[] parameters)</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDatabase.AllInstances.QuerySingleStringObjectArray">
+            <summary>Sets the shim of Database.QuerySingle(String commandText, Object[] args)</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDatabase.AllInstances.QueryStringObjectArray">
+            <summary>Sets the shim of Database.Query(String commandText, Object[] parameters)</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDatabase.AllInstances.QueryValueStringObjectArray">
+            <summary>Sets the shim of Database.QueryValue(String commandText, Object[] args)</summary>
+        </member>
+        <member name="T:WebMatrix.Data.Fakes.ShimDynamicRecord">
+            <summary>Shim type of WebMatrix.Data.DynamicRecord</summary>
+        </member>
+        <member name="M:WebMatrix.Data.Fakes.ShimDynamicRecord.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:WebMatrix.Data.Fakes.ShimDynamicRecord.#ctor(WebMatrix.Data.DynamicRecord)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:WebMatrix.Data.Fakes.ShimDynamicRecord.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:WebMatrix.Data.Fakes.ShimDynamicRecord.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:WebMatrix.Data.Fakes.ShimDynamicRecord.Bind(System.ComponentModel.ICustomTypeDescriptor)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:WebMatrix.Data.Fakes.ShimDynamicRecord.Bind(System.Dynamic.IDynamicMetaObjectProvider)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDynamicRecord.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDynamicRecord.ColumnsGet">
+            <summary>Sets the shim of DynamicRecord.get_Columns()</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDynamicRecord.ColumnsSetIListOfString">
+            <summary>Sets the shim of DynamicRecord.set_Columns(IList`1&lt;String&gt; value)</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDynamicRecord.ConstructorIEnumerableOfStringIDataRecord">
+            <summary>Sets the shim of DynamicRecord.DynamicRecord(IEnumerable`1&lt;String&gt; columnNames, IDataRecord record)</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDynamicRecord.GetDynamicMemberNames">
+            <summary>Sets the shim of DynamicRecord.GetDynamicMemberNames()</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDynamicRecord.GetValueObject">
+            <summary>Sets the shim of DynamicRecord.GetValue(Object value)</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDynamicRecord.ItemGetInt32">
+            <summary>Sets the shim of DynamicRecord.get_Item(Int32 index)</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDynamicRecord.ItemGetString">
+            <summary>Sets the shim of DynamicRecord.get_Item(String name)</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDynamicRecord.RecordGet">
+            <summary>Sets the shim of DynamicRecord.get_Record()</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDynamicRecord.RecordSetIDataRecord">
+            <summary>Sets the shim of DynamicRecord.set_Record(IDataRecord value)</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDynamicRecord.SystemComponentModelICustomTypeDescriptorGetAttributes">
+            <summary>Sets the shim of DynamicRecord.System.ComponentModel.ICustomTypeDescriptor.GetAttributes()</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDynamicRecord.SystemComponentModelICustomTypeDescriptorGetClassName">
+            <summary>Sets the shim of DynamicRecord.System.ComponentModel.ICustomTypeDescriptor.GetClassName()</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDynamicRecord.SystemComponentModelICustomTypeDescriptorGetComponentName">
+            <summary>Sets the shim of DynamicRecord.System.ComponentModel.ICustomTypeDescriptor.GetComponentName()</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDynamicRecord.SystemComponentModelICustomTypeDescriptorGetConverter">
+            <summary>Sets the shim of DynamicRecord.System.ComponentModel.ICustomTypeDescriptor.GetConverter()</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDynamicRecord.SystemComponentModelICustomTypeDescriptorGetDefaultEvent">
+            <summary>Sets the shim of DynamicRecord.System.ComponentModel.ICustomTypeDescriptor.GetDefaultEvent()</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDynamicRecord.SystemComponentModelICustomTypeDescriptorGetDefaultProperty">
+            <summary>Sets the shim of DynamicRecord.System.ComponentModel.ICustomTypeDescriptor.GetDefaultProperty()</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDynamicRecord.SystemComponentModelICustomTypeDescriptorGetEditorType">
+            <summary>Sets the shim of DynamicRecord.System.ComponentModel.ICustomTypeDescriptor.GetEditor(Type editorBaseType)</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDynamicRecord.SystemComponentModelICustomTypeDescriptorGetEvents">
+            <summary>Sets the shim of DynamicRecord.System.ComponentModel.ICustomTypeDescriptor.GetEvents()</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDynamicRecord.SystemComponentModelICustomTypeDescriptorGetEventsAttributeArray">
+            <summary>Sets the shim of DynamicRecord.System.ComponentModel.ICustomTypeDescriptor.GetEvents(Attribute[] attributes)</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDynamicRecord.SystemComponentModelICustomTypeDescriptorGetProperties">
+            <summary>Sets the shim of DynamicRecord.System.ComponentModel.ICustomTypeDescriptor.GetProperties()</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDynamicRecord.SystemComponentModelICustomTypeDescriptorGetPropertiesAttributeArray">
+            <summary>Sets the shim of DynamicRecord.System.ComponentModel.ICustomTypeDescriptor.GetProperties(Attribute[] attributes)</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDynamicRecord.SystemComponentModelICustomTypeDescriptorGetPropertyOwnerPropertyDescriptor">
+            <summary>Sets the shim of DynamicRecord.System.ComponentModel.ICustomTypeDescriptor.GetPropertyOwner(PropertyDescriptor pd)</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDynamicRecord.TryGetMemberGetMemberBinderObjectOut">
+            <summary>Sets the shim of DynamicRecord.TryGetMember(GetMemberBinder binder, Object&amp; result)</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDynamicRecord.VerifyColumnString">
+            <summary>Sets the shim of DynamicRecord.VerifyColumn(String name)</summary>
+        </member>
+        <member name="T:WebMatrix.Data.Fakes.ShimDynamicRecord.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDynamicRecord.AllInstances.ColumnsGet">
+            <summary>Sets the shim of DynamicRecord.get_Columns()</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDynamicRecord.AllInstances.ColumnsSetIListOfString">
+            <summary>Sets the shim of DynamicRecord.set_Columns(IList`1&lt;String&gt; value)</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDynamicRecord.AllInstances.GetDynamicMemberNames">
+            <summary>Sets the shim of DynamicRecord.GetDynamicMemberNames()</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDynamicRecord.AllInstances.ItemGetInt32">
+            <summary>Sets the shim of DynamicRecord.get_Item(Int32 index)</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDynamicRecord.AllInstances.ItemGetString">
+            <summary>Sets the shim of DynamicRecord.get_Item(String name)</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDynamicRecord.AllInstances.RecordGet">
+            <summary>Sets the shim of DynamicRecord.get_Record()</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDynamicRecord.AllInstances.RecordSetIDataRecord">
+            <summary>Sets the shim of DynamicRecord.set_Record(IDataRecord value)</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDynamicRecord.AllInstances.SystemComponentModelICustomTypeDescriptorGetAttributes">
+            <summary>Sets the shim of DynamicRecord.System.ComponentModel.ICustomTypeDescriptor.GetAttributes()</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDynamicRecord.AllInstances.SystemComponentModelICustomTypeDescriptorGetClassName">
+            <summary>Sets the shim of DynamicRecord.System.ComponentModel.ICustomTypeDescriptor.GetClassName()</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDynamicRecord.AllInstances.SystemComponentModelICustomTypeDescriptorGetComponentName">
+            <summary>Sets the shim of DynamicRecord.System.ComponentModel.ICustomTypeDescriptor.GetComponentName()</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDynamicRecord.AllInstances.SystemComponentModelICustomTypeDescriptorGetConverter">
+            <summary>Sets the shim of DynamicRecord.System.ComponentModel.ICustomTypeDescriptor.GetConverter()</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDynamicRecord.AllInstances.SystemComponentModelICustomTypeDescriptorGetDefaultEvent">
+            <summary>Sets the shim of DynamicRecord.System.ComponentModel.ICustomTypeDescriptor.GetDefaultEvent()</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDynamicRecord.AllInstances.SystemComponentModelICustomTypeDescriptorGetDefaultProperty">
+            <summary>Sets the shim of DynamicRecord.System.ComponentModel.ICustomTypeDescriptor.GetDefaultProperty()</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDynamicRecord.AllInstances.SystemComponentModelICustomTypeDescriptorGetEditorType">
+            <summary>Sets the shim of DynamicRecord.System.ComponentModel.ICustomTypeDescriptor.GetEditor(Type editorBaseType)</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDynamicRecord.AllInstances.SystemComponentModelICustomTypeDescriptorGetEvents">
+            <summary>Sets the shim of DynamicRecord.System.ComponentModel.ICustomTypeDescriptor.GetEvents()</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDynamicRecord.AllInstances.SystemComponentModelICustomTypeDescriptorGetEventsAttributeArray">
+            <summary>Sets the shim of DynamicRecord.System.ComponentModel.ICustomTypeDescriptor.GetEvents(Attribute[] attributes)</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDynamicRecord.AllInstances.SystemComponentModelICustomTypeDescriptorGetProperties">
+            <summary>Sets the shim of DynamicRecord.System.ComponentModel.ICustomTypeDescriptor.GetProperties()</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDynamicRecord.AllInstances.SystemComponentModelICustomTypeDescriptorGetPropertiesAttributeArray">
+            <summary>Sets the shim of DynamicRecord.System.ComponentModel.ICustomTypeDescriptor.GetProperties(Attribute[] attributes)</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDynamicRecord.AllInstances.SystemComponentModelICustomTypeDescriptorGetPropertyOwnerPropertyDescriptor">
+            <summary>Sets the shim of DynamicRecord.System.ComponentModel.ICustomTypeDescriptor.GetPropertyOwner(PropertyDescriptor pd)</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDynamicRecord.AllInstances.TryGetMemberGetMemberBinderObjectOut">
+            <summary>Sets the shim of DynamicRecord.TryGetMember(GetMemberBinder binder, Object&amp; result)</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.ShimDynamicRecord.AllInstances.VerifyColumnString">
+            <summary>Sets the shim of DynamicRecord.VerifyColumn(String name)</summary>
+        </member>
+        <member name="T:WebMatrix.Data.Fakes.StubConnectionEventArgs">
+            <summary>Stub type of WebMatrix.Data.ConnectionEventArgs</summary>
+        </member>
+        <member name="M:WebMatrix.Data.Fakes.StubConnectionEventArgs.#ctor(System.Data.Common.DbConnection)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:WebMatrix.Data.Fakes.StubConnectionEventArgs.InitializeStub">
+            <summary>Initializes a new instance of type StubConnectionEventArgs</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.StubConnectionEventArgs.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.StubConnectionEventArgs.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:WebMatrix.Data.Fakes.StubConnectionEventArgs.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>

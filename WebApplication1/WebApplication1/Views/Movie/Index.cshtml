@@ -3,6 +3,11 @@
 @{
     ViewBag.Title = "Index";
 }
+@{
+    var db = Database.OpenConnectionString("DBConnectionString");
+    var query = "SELECT * FROM Movies";
+}
+
 
 <h2>Index</h2>
 
@@ -11,10 +16,13 @@
 </p>
 <div class="mvMain">
     <div id="mvTitle">- NOW SHOWING -</div><br>
-    <span id="mvImage"><img src="" alt="Movie" height="300" width="200" /><br><span id="mvLink"></span></span>
-</div>
+@foreach(var row in db.Query(query))
+{
+    <span id="mvImage"><img src="+@row.ImageUrl+" alt="+@row.Title+" height="300" width="200" /><br><span id="mvLink">@row.Title</span></span>
+}
+    </div>
 
-            <table class="table">
+           <!--  <table class="table">
                 <tr>
                     <th>
                         @Html.DisplayNameFor(model => model.Movie_Title)
@@ -37,7 +45,7 @@
                     <th></th>
                 </tr>
 
-                @foreach (var item in Model)
+               @foreach (var item in Model)
                 {
                     <tr>
                         <td>
@@ -64,6 +72,5 @@
                             @Html.ActionLink("Delete", "Delete", new { id = item.Movie_ID })
                         </td>
                     </tr>
-                }
-
-            </table>
+                }-
+            </table> -->
