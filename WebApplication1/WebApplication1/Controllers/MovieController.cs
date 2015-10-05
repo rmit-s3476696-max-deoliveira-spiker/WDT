@@ -18,7 +18,9 @@ namespace WebApplication1.Controllers
         // GET: /Movie/
         public ActionResult Index()
         {
-            return View(db.Movies.ToList());
+            var movies = from m in db.Movies
+                         select m; 
+            return View(movies);
         }
 
         // GET: /Movie/Details/5
