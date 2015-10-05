@@ -14,7 +14,7 @@ namespace WebApplication1.Controllers
     public class MovieController : Controller
     {
         private MovieDBContext db = new MovieDBContext();
-
+        //
         // GET: /Movie/
         public ActionResult Index()
         {
@@ -115,7 +115,6 @@ namespace WebApplication1.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
-
         protected override void Dispose(bool disposing)
         {
             if (disposing)
