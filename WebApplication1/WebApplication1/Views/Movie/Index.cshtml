@@ -7,57 +7,63 @@
 <h2>Index</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Make Booking", "Create")
 </p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Movie_Title)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Short_Description)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Long_Description)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Poster)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Duration)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Price)
-        </th>
-        <th></th>
-    </tr>
+<div class="mvMain">
+    <div id="mvTitle">- NOW SHOWING -</div><br>
+    <span id="mvImage"><img src="" alt="Movie" height="300" width="200" /><br><span id="mvLink"></span></span>
+</div>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Movie_Title)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Short_Description)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Long_Description)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Poster)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Duration)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Price)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Movie_ID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Movie_ID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Movie_ID })
-        </td>
-    </tr>
-}
+            <table class="table">
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Movie_Title)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Short_Description)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Long_Description)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Poster)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Duration)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Price)
+                    </th>
+                    <th></th>
+                </tr>
 
-</table>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Movie_Title)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Short_Description)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Long_Description)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Poster)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Duration)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Price)
+                        </td>
+                        <td>
+                            @Html.ActionLink("Edit", "Edit", new { id = item.Movie_ID }) |
+                            @Html.ActionLink("Details", "Details", new { id = item.Movie_ID }) |
+                            @Html.ActionLink("Delete", "Delete", new { id = item.Movie_ID })
+                        </td>
+                    </tr>
+                }
+
+            </table>
