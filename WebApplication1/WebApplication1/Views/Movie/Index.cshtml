@@ -9,10 +9,14 @@
 <p>
     @Html.ActionLink("Make Booking", "Create")
 </p>
+
 <div class="mvMain">
     <div id="mvTitle">- NOW SHOWING -</div><br>
-    <span id="mvImage"><img src="" alt="Movie" height="300" width="200" /><br><span id="mvLink"></span></span>
-</div>
+@foreach (var item in Model)
+{
+    <span id="mvImage"><img src=@item.Poster alt="Movie" height="300" width="200" /><br><span id="mvLink"></span></span>
+}
+    </div>
 <table class="table">
     <tr>
         <th>
