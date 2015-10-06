@@ -16,27 +16,10 @@ namespace WebApplication1.Controllers
         private MovieDBContext db = new MovieDBContext();
         //
         // GET: /Movie/
-       /* public ActionResult Index()
+        public ActionResult Index()
         {
-<<<<<<< HEAD
-            try
-            {
-                if ()
-                {
-                return View(db.Movies.ToList());
-                }
-            }
-            catch (Data.Exception ex)
-            {
-                
-            }
-        }*/
-=======
-            var movies = from m in db.Movies
-                         select m; 
-            return View(movies);
+            return View(db.Movies.ToList());
         }
->>>>>>> origin/master
 
         // GET: /Movie/Details/5
         public ActionResult Details(int? id)
@@ -64,7 +47,7 @@ namespace WebApplication1.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include="Movie_ID,Movie_Title,Short_Description,Long_Description,Poster,Duration,Price")] Movie movie)
+        public ActionResult Create([Bind(Include = "Movie_ID,Movie_Title,Short_Description,Long_Description,Poster,Duration,Price")] Movie movie)
         {
             if (ModelState.IsValid)
             {
@@ -96,7 +79,7 @@ namespace WebApplication1.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include="Movie_ID,Movie_Title,Short_Description,Long_Description,Poster,Duration,Price")] Movie movie)
+        public ActionResult Edit([Bind(Include = "Movie_ID,Movie_Title,Short_Description,Long_Description,Poster,Duration,Price")] Movie movie)
         {
             if (ModelState.IsValid)
             {
